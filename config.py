@@ -1,3 +1,3 @@
-GEMINI_KEY = "AIzaSyAQKeekaGeS6k89bYRqD3GxtR4HbwiPZn8"
-APPLICATION_ID = '125c9ed9'  # Your Application ID
-APPLICATION_KEY = '187ea651787fd95b89a7f8a71724d6d4'  # Your Application Key
+GEMINI_KEY = "" # Your Gemini Api Key
+APPLICATION_ID = ''  # Your Application ID
+APPLICATION_KEY = ''  # Your Application Key
