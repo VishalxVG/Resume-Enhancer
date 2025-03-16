@@ -7,7 +7,7 @@ st.set_page_config(page_title="AI Resume Enhancer", page_icon="📄")
 
 import os
 import tempfile
-from LLM_For_Resume_Enhancement.model  import extract_text_from_pdf, score_resume, enhance_resume
+from model  import extract_text_from_pdf, score_resume, enhance_resume
 from Live_Job_Postings.live_postings import fetch_jobs
 
 
@@ -24,7 +24,6 @@ resume_file = st.file_uploader("📂 Upload Resume (PDF)", type=["pdf"])
 
 jd_file = st.file_uploader("📂 Upload Job Description (PDF)", type=["pdf"])
 
-job_role = st.text_input("Job Role (e.g., 'Software Engineer')")
 
 def save_uploaded_file(uploaded_file):
     """ Saves uploaded file temporarily and returns the path """
@@ -69,6 +68,8 @@ if st.button("🚀 Analyze Resume"):
     else:
         st.error("⚠️ Please upload both Resume and Job Description PDFs.")
 
+
+job_role = st.text_input("Job Role (e.g., 'Software Engineer')")
 
 # Button to search for jobs
 if st.button("Search Jobs"):
